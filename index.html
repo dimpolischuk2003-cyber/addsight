@@ -22,7 +22,7 @@
 <section class="cta-section"><div class="container"><h2>Перестаньте гадати.<br>Починайте <span style="color:var(--accent2)">рахувати</span>.</h2><p>Ваші конкуренти вже використовують AI для аналізу реклами. Не відставайте.</p><a href="#form" class="btn-primary">Спробувати безкоштовно →</a></div></section>
 <footer><div class="container"><p>AdSight &copy; 2026. AI-аналітик Meta Ads у Telegram.</p></div></footer>
 <script>
-var SCRIPT_URL='YOUR_GOOGLE_APPS_SCRIPT_URL';
+var SCRIPT_URL='https://script.google.com/macros/s/AKfycbyjSIM5qGpli5VW_eORmyLYQQ80qqF-qLYVUuH7tAevPN_YdbcAWjEtq4wdvVUUywvH/exec';
 document.getElementById('leadForm').addEventListener('submit',function(e){e.preventDefault();var f=e.target;var d={name:f.name.value,contact:f.contact.value,role:f.role.value,accounts:f.accounts.value,budget:f.budget.value,message:f.message.value,date:new Date().toISOString()};fetch(SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)}).then(function(){f.style.display='none';document.getElementById('formSuccess').style.display='block'}).catch(function(){f.style.display='none';document.getElementById('formSuccess').style.display='block'})});
 </script>
 </body>
